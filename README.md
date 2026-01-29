@@ -1,13 +1,13 @@
-# SWE-Reflexion
+# SWE-ECR
 
-SWE-Reflexion is an automated code bug localization framework driven by Large Language Model (LLM) APIs (e.g., GPT-4, DeepSeek). Unlike traditional one-way search methods, this project adopts a **Multi-Agent Collaboration** mechanism. Through the interaction of the main agent (Explorer), the critique agent (Critic), and the reflection agent (Reflector), combined with **Graph Index** and **BM25 Index** to enhance retrieval capabilities, it achieves high-precision bug localization.
+SWE-ECRis an automated code bug localization framework driven by Large Language Model (LLM) APIs (e.g., GPT-4, DeepSeek). Unlike traditional one-way search methods, this project adopts a **Multi-Agent Collaboration** mechanism. Through the interaction of the main agent (Explorer), the critique agent (Critic), and the reflection agent (Reflector), combined with **Graph Index** and **BM25 Index** to enhance retrieval capabilities, it achieves high-precision bug localization.
 
 ## 📂 Project Structure
 
 To help you navigate the repository, here is a description of the key directories and files:
 
 * **`ablation_results/`**: Contains raw localization outputs for **Ablation Studies**. It includes different configurations such as `no_critic` and `no_reflect` to verify the effectiveness of the multi-agent components.
-* **`result/`**: Stores the final experimental results of the full **SWE-Reflexion** pipeline.
+* **`result/`**: Stores the final experimental results of the full **SWE-ECR** pipeline.
 * **`data/`**: Contains the **SWE-bench-Lite** dataset files used for evaluation.
 * **`dependency_graph/`**: Scripts and logic for building and traversing the Code Property Graph (CPG).
 * **`evaluation/`**: Evaluation scripts (e.g., `eval_metric.py`) to calculate metrics like Accuracy and MRR.
